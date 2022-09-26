@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MinigameJudge</title>
+</head>
+<body>
+<div id="main-wrapper">
+    <div id="main">
+        <div class="num-right">
+            <span id="acc">0</span>%
+        </div>
+        <div class="num-split-container" id="hits-container">
+            <div class="num-split">
+                <div class="num-title ma">MA</div>
+                <div class="num-value" id="hit-320">0</div>
+            </div>
+            <div class="num-split">
+                <div class="num-title pr">PR</div>
+                <div class="num-value" id="hit-300">0</div>
+            </div>
+            <div class="num-split">
+                <div class="num-title gr">GR</div>
+                <div class="num-value" id="hit-200">0</div>
+            </div>
+            <div class="num-split">
+                <div class="num-title gd">GD</div>
+                <div class="num-value" id="hit-100">0</div>
+            </div>
+            <div class="num-split">
+                <div class="num-title bd">BD</div>
+                <div class="num-value" id="hit-50">0</div>
+            </div>
+            <div class="num-split">
+                <div class="num-title ms">MS</div>
+                <div class="num-value" id="hit-0">0</div>
+            </div>
+        </div>
+        <div class="num-right">
+            <span id="ur">999.99</span>UR
+        </div>
+    </div>
+</div>
+<script src="deps/reconnecting-websocket.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
