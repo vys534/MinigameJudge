@@ -10,36 +10,59 @@
 <div id="main-wrapper">
     <div id="main">
         <div class="num-right">
-            <span id="acc">0</span>%
+            <span id="acc">-</span>%
+        </div>
+        <div class="num-right">
+            <span id="ur">-</span>UR
         </div>
         <div class="num-split-container" id="hits-container">
-            <div class="num-split">
+            <div class="num-split" id="hit-320-container">
                 <div class="num-title ma">MA</div>
-                <div class="num-value" id="hit-320">0</div>
+                <div class="num-value"><span id="hit-320">-</span></div>
             </div>
             <div class="num-split">
                 <div class="num-title pr">PR</div>
-                <div class="num-value" id="hit-300">0</div>
+                <div class="num-value"><span id="hit-300">-</span></div>
             </div>
             <div class="num-split">
                 <div class="num-title gr">GR</div>
-                <div class="num-value" id="hit-200">0</div>
+                <div class="num-value"><span id="hit-200">-</span></div>
             </div>
             <div class="num-split">
                 <div class="num-title gd">GD</div>
-                <div class="num-value" id="hit-100">0</div>
+                <div class="num-value"><span id="hit-100">-</span></div>
             </div>
             <div class="num-split">
                 <div class="num-title bd">BD</div>
-                <div class="num-value" id="hit-50">0</div>
+                <div class="num-value"><span id="hit-50">-</span></div>
             </div>
             <div class="num-split">
                 <div class="num-title ms">MS</div>
-                <div class="num-value" id="hit-0">0</div>
+                <div class="num-value"><span id="hit-0">-</span></div>
             </div>
         </div>
-        <div class="num-right">
-            <span id="ur">999.99</span>UR
+
+        <div class="le-split-container">
+            <div class="le-split">
+                <div class="le-title early">EARLY</div>
+                <div class="le-value" id="early">-</div>
+            </div>
+            <div class="le-split">
+                <div class="le-title late">LATE</div>
+                <div class="le-value" id="late">-</div>
+            </div>
+            <div class="le-split">
+                <div class="le-title">TOTAL</div>
+                <div class="le-value" id="totalnote">-</div>
+            </div>
+            <div class="le-split">
+                <div class="le-title">RATIO</div>
+                <div class="le-value" id="ratio">-</div>
+            </div>
+        </div>
+
+        <div class="debug" id="debug-container" style="display:none">
+            <div><span id="rendertime">-</span>ms</div>
         </div>
     </div>
 </div>

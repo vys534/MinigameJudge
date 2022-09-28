@@ -5,7 +5,7 @@
     --good: #4444ff;
     --bad: #dd67ff;
     --miss: #ff1a1a;
-    --counter-width: 125px;
+    --counter-width: 150px;
 }
 
 @font-face {
@@ -18,15 +18,28 @@
     src: url(../fonts/RobotoMono-Bold.ttf);
 }
 
-#main {
-    width: var(--counter-width);
-    font-size: 1.2em;
+body {
+    box-sizing: border-box;
 }
 
-.num-split {
+#main {
+    width: var(--counter-width);
+    font-size: 1.1em;
+    color: white;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.num-split, .le-split {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.num-split-container {
+    margin: 10px 0;
+}
+
+.num-split {
     padding: 3px 0;
 }
 
@@ -36,8 +49,6 @@
 }
 
 .num-value {
-    font-family: "Roboto Mono", sans-serif;
-    color: white;
     text-align: right;
 }
 
@@ -66,9 +77,40 @@
 }
 
 .num-right {
-    padding: 10px 0;
     font-family: "Roboto Mono Bold", sans-serif;
-    font-size: 1.3em;
     color: white;
     text-align: right;
+}
+
+#ur, #acc {
+    font-size: 1.3em;
+}
+
+.early {
+    color: #4efff9;
+}
+
+.late {
+    color: #ff1a1a;
+}
+
+.le-split-container {
+    margin-top: 10px;
+}
+.od-info {
+    text-align: right;
+}
+
+.debug {
+    text-align: right;
+    font-size: 0.75em;
+    margin-top: 20px;
+}
+
+.ratio-red {
+    color: red;
+}
+
+.ratio-green {
+    color: greenyellow;
 }
